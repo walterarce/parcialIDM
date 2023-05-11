@@ -4,6 +4,7 @@
         max-width: 90%;
         align-items: center;
         justify-content: center;
+        background-color: aqua;
     }
     body>h1{
         color: blue;
@@ -36,13 +37,52 @@
         color: #fff;
     }
 }
-@media screen and (max-width: 500px)
+@media screen and (min-width: 577px) and (max-width: 991px)
 {
     body  {
         max-width: 90%;
         align-items: center;
         justify-content: center;
         background-color: #99ff99;
+    }
+    body>h1{
+        color: blue;
+    }
+    header>h1 {
+        color: red;
+    }
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #99ff99;
+    }
+
+    .menu li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .menu li a {
+        color: #33cc66;
+        text-decoration: none;
+    }
+
+    .menu li:hover {
+        background-color: #cccccc;
+    }
+
+    .menu li:hover a {
+        color: #fff;
+    }
+}
+@media screen and (min-width: 150px) and (max-width: 576px)
+{
+    body  {
+        max-width: 90%;
+        align-items: center;
+        justify-content: center;
+        background-color: #16289e;
     }
     body>h1{
         color: blue;
