@@ -1,100 +1,223 @@
-@media screen and (min-width: 992px)
-{
-    body  {
-        max-width: 90%;
+@media screen and (min-width: 992px) {
+    body {
+        max-width: 100%;
         align-items: center;
         justify-content: center;
-        background-color: aqua;
+        background-color: #297abd;
+        margin: 0 auto;
     }
-    body>h1{
+
+    body > h1 {
         color: blue;
     }
-    header>h1 {
+
+    body > h1 img {
+        width: 200px;
+        height: 100px;
+    }
+
+    header > h1 {
         color: red;
     }
+
+    header h2 {
+        text-align: center;
+    }
+
+    header > div {
+        background-image: url('images/verdefondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        margin-top: 5rem;
+        height: 55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > div > div {
+        font-family: "Montserrat", Helvetica ;
+        display: flex;
+        margin: 5em;
+        padding: 2em;
+        background-color: #a6ce88;
+        border: 2px solid;
+        border-radius: 10px;
+    }
+
+    /*Div mas profundo dentro del inicio web*/
+    header > div > div > div {
+        margin-left: 1em;
+        text-align: left;
+        padding: 1.5em;
+        height: 18em;
+    }
+
+    header > div picture {
+        position: absolute;
+        top: 0;
+        margin-top: 6rem;
+    }
+
+    nav > div {
+        background-color: rgba(27, 95, 43, 0.37);
+    }
+
     .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         list-style: none;
-        margin: 0;
         padding: 0;
-        background-color: #99ff99;
+        margin-top: 0;
+        border: 0;
+        font-family: "Montserrat", Helvetica ;
+        font-weight: bold;
+        margin-right: 8em;
     }
 
     .menu li {
-        display: inline-block;
-        padding: 10px;
+        margin: 0;
     }
 
     .menu li a {
-        color: #33cc66;
+        display: block;
+        color: #1B5F2B;
+        text-align: center;
+        padding: 14px 16px;
         text-decoration: none;
+        font-size: 24px;
+        margin-right: 10px;
     }
 
-    .menu li:hover {
-        background-color: #cccccc;
+    .menu li a:hover {
+        background-color: #4CAF50;
     }
 
-    .menu li:hover a {
-        color: #fff;
+section article header h2 {
+    font-family: "Raleway", Helvetica, Montserrat;
+    color: #1B5F2B;
+    font-size: 48px;
+}
+    section article div > div img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    section article div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1px;
+        border: 1px solid;
+        padding: 1em;
+
+    }
+    section article div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.5rem 1rem 0.5rem;
+
     }
 }
-@media screen and (min-width: 577px) and (max-width: 991px)
-{
-    body  {
-        max-width: 90%;
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    body {
+        max-width: 100%;
         align-items: center;
         justify-content: center;
-        background-color: #99ff99;
+        background-color: #297abd;
+        margin: 0 auto;
     }
-    body>h1{
+
+    body > h1 {
         color: blue;
     }
-    header>h1 {
-        color: red;
+
+    body > h1 img {
+        width: 200px;
+        height: 100px;
     }
+
+    header > h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    header h2 {
+        text-align: center;
+    }
+
+    header > div {
+        background-image: url('images/verdefondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        margin-top: 4rem;
+        height: 55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > div > div {
+        font-family: "Montserrat", Helvetica ;
+        display: flex;
+        margin: 5em;
+        padding: 2em;
+        background-color: #a6ce88;
+        border: 2px solid;
+        border-radius: 10px;
+    }
+
+    /*Div mas profundo dentro del inicio web*/
+    header > div > div > div {
+        margin-left: 1em;
+        text-align: left;
+        padding: 1.5em;
+        height: 18em;
+    }
+
+    header > div picture {
+        position: absolute;
+        top: 0;
+        margin-top: 8rem;
+    }
+
+    nav > div {
+        background-color: rgba(27, 95, 43, 0.37);
+    }
+
     .menu {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: #99ff99;
+        display: none;
     }
 
-    .menu li {
-        display: inline-block;
-        padding: 10px;
-    }
 
-    .menu li a {
-        color: #33cc66;
-        text-decoration: none;
-    }
-
-    .menu li:hover {
-        background-color: #cccccc;
-    }
-
-    .menu li:hover a {
-        color: #fff;
-    }
 }
-@media screen and (min-width: 150px) and (max-width: 576px)
-{
-    body  {
+
+@media screen and (min-width: 150px) and (max-width: 576px) {
+    body {
         max-width: 90%;
         align-items: center;
         justify-content: center;
         background-color: #16289e;
     }
-    body>h1{
+
+    body > h1 {
         color: blue;
     }
-    header>h1 {
+
+    header > h1 {
         color: red;
     }
+
     .menu {
         list-style: none;
         margin: 0;
         padding: 0;
         background-color: #99ff99;
+        display: none;
     }
 
     .menu li {
