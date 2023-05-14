@@ -37,13 +37,14 @@
     }
 
     header > div > div {
-        font-family: "Montserrat", Helvetica ;
+        font-family: "Montserrat", Helvetica;
         display: flex;
         margin: 5em;
         padding: 2em;
         background-color: #a6ce88;
         border: 2px solid;
         border-radius: 10px;
+
     }
 
     /*Div mas profundo dentro del inicio web*/
@@ -72,7 +73,7 @@
         padding: 0;
         margin-top: 0;
         border: 0;
-        font-family: "Montserrat", Helvetica ;
+        font-family: "Montserrat", Helvetica;
         font-weight: bold;
         margin-right: 8em;
     }
@@ -95,30 +96,140 @@
         background-color: #4CAF50;
     }
 
-section article header h2 {
-    font-family: "Raleway", Helvetica, Montserrat;
-    color: #1B5F2B;
-    font-size: 48px;
-}
+    section article {
+        background-image: url('images/1x/01_fondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    section article header h2 {
+        font-family: "Raleway", Helvetica, Montserrat;
+        color: #A6CE88;
+        font-size: 48px;
+    }
+
+
+
     section article div > div img {
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 50%;
+        max-height: 50%;
+        width: 1em;
+        height: auto;
+        margin: auto;
     }
 
     section article div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1px;
-        border: 1px solid;
         padding: 1em;
 
+        margin: 0 0.5rem 1rem 0.5rem;
     }
+
     section article div > div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0.5rem 1rem 0.5rem;
+    }
 
+    section article div > div > div {
+        background-color: red;
+    }
+
+    .info-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .info-box {
+        flex-basis: calc(33.33% - 10px);
+        margin-bottom: 20px;
+        border: 1px solid rgba(27, 95, 43, 0.37);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #A6CE88;
+        border-radius: 5px;
+    }
+
+    .info-box img {
+        width: 50%;
+    }
+
+    .info-box p {
+        margin-top: 2px;
+        text-align: justify;
+        padding: 1em;
+        font-family:"Raleway", Helvetica, Montserrat ;
+    }
+
+    footer {
+        background-color: #8d4343;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 20px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: white;
+    }
+
+    .social-icons a i {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .video-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .video-main {
+        width: 350px;
+        height: 350px;
+        margin-right: 10px;
+    }
+
+    .video-sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .video-box {
+        flex-basis: calc(50% - 10px);
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .video-small {
+        width: 160px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+
+    .form-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
     }
 }
 
@@ -162,7 +273,7 @@ section article header h2 {
     }
 
     header > div > div {
-        font-family: "Montserrat", Helvetica ;
+        font-family: "Montserrat", Helvetica;
         display: flex;
         margin: 5em;
         padding: 2em;
