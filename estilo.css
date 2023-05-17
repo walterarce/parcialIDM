@@ -11,6 +11,8 @@
 body {
     background-color: rgba(27, 95, 43, 0.37);
     font-family: "Montserrat", sans-serif;
+
+
 }
 
 body > h1 img {
@@ -21,6 +23,7 @@ body > h1 img {
 header {
     width: 100%;
     height: 60vh;
+
 }
 
 h1 {
@@ -46,7 +49,7 @@ h2 {
     font-size: 26px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-left: 20px;
-    padding:1rem;
+    padding: 1rem;
 }
 
 h3 {
@@ -63,10 +66,10 @@ section article div {
 }
 
 section article div > div {
-
     background-color: #A6CE88;
     padding: 1rem;
     width: 100%;
+
 }
 
 section article div > div > img {
@@ -79,68 +82,9 @@ section article div > div > iframe {
     border: 2px solid black;
 }
 
-nav {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
     width: 140px;
     margin-left: 20px;
-}
-
-.bar-btn {
-    font-size: 25px;
-    color: #ffffffff;
-    margin-right: 20px;
-    cursor: pointer;
-
-}
-
-.nav-menu {
-    position: fixed;
-    width: 100%;
-
-    top: 100px;
-    background: rgba(27, 95, 43, 0.73);
-    text-align: center;
-    transition: all 2s;
-
-}
-
-.nav-menu li {
-    display: none;
-    line-height: 30px;
-    margin: 50px 0;
-    transition: all .2s;
-}
-
-.nav-menu li a {
-    color: #2D4815;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.nav-menu li a.active, .nav-menu li a:hover {
-    color: #d99414;
-    text-emphasis-color: #2D4815;
-    transition: .1s;
-}
-
-#check {
-    display: none;
-}
-
-#check:checked ~ .nav-menu {
-    height: 100vh;
-}
-
-#check:checked ~ .nav-menu li {
-    display: block;
 }
 
 footer {
@@ -148,12 +92,18 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+
+}
+footer div{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer a {
     text-decoration: none;
     color: white;
     margin: 0 20px;
+
 }
 
 form {
@@ -174,8 +124,11 @@ label {
 }
 
 input[type="text"],
+
 input[type="email"],
+
 input[type="checkbox"],
+
 input[type="radio"] {
     width: 100%;
     padding: 0.5rem;
@@ -235,14 +188,67 @@ button[type="submit"] {
     margin-right: 10px;
 }
 
-@media screen and (min-width: 991px) {
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
+#barra {
+    width: 100%;
+    height: calc(100vh - 4em);
+    position: absolute;
+    top: 4em;
+    left: -100%;
+    background: #A6CE88;
+    transition: left .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 80%;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    background: #2D4815;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+/*Mobile*/
+@media screen and (max-width: 991px) {
+
+    #menu > a {
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75em;
+        background: url("images/menu.png") no-repeat center center;
+        background-size: cover;
+        height: 2.5em;
+        width: 2.5em;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
+    #cerrar {
+        display: none;
+    }
+
+    #abrir:focus ~ #barra {
+        left: 0;
+    }
+
+    #abrir:focus ~ #cerrar {
+        display: block;
+    }
+
+
+}
+/*Pc*/
+@media screen and (min-width: 992px) {
     body {
         background-color: rgba(27, 95, 43, 0.37);
         max-width: 100vw;
@@ -275,8 +281,8 @@ button[type="submit"] {
     div picture {
         position: absolute;
         top: 0;
-        margin-top: 8.5rem;
-        z-index: 0;
+        margin-top: 10rem;
+        z-index: -3;
     }
 
     section article h2 {
@@ -295,7 +301,6 @@ button[type="submit"] {
         color: #2D4815;
 
     }
-
 
     section article div > div img {
         max-width: 50%;
@@ -321,46 +326,38 @@ button[type="submit"] {
         height: 100%;
         border-radius: 10px;
     }
-
-    .franquiciastyle div>iframe {
+    .franquiciastyle {
+        display: block;
+    }
+    .franquiciastyle div > iframe {
         aspect-ratio: 16 / 9;
-        width : 560px;
-        height :315px;
+        width: 560px;
+        height: 315px;
     }
 
-
-    /* Navegación y logo PC */
-    nav {
-        height: 100px;
-    }
-
-    .bar-btn {
+    #abrir, #cerrar {
         display: none;
     }
 
-    .nav-menu {
-        position: relative;
-        height: 100px;
-        top: 0;
+    #menu {
+        flex: 1;
+    }
+
+    #barra {
+        position: static;
+        height: auto;
         background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
-    .nav-menu li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
+    #barra li {
+        width: 130px;
+        margin: 0 1em;
     }
-
-    .nav-menu li a {
-        font-size: 18px;
-    }
-
     .logo {
         width: 300px;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+        z-index: 0;
     }
 }

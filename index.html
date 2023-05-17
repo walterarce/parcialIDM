@@ -19,20 +19,18 @@
     </picture>
 </div>
 <header>
-    <nav>
+    <nav id="menu">
         <div>
             <img src="images/300w/01_logo.png" alt="" class="logo">
         </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="bar-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav-menu">
-            <li><a class="active" href="#inicio">Inicio</a></li>
+        <a id="abrir" href="#">Abrir</a>
+        <a id="cerrar" href="#">Cerrar</a>
+        <ul id="barra">
+            <li><a href="#inicio">Nosotros</a></li>
             <li><a href="#cursos">Cursos</a></li>
-            <Li><a href="#proyectos">Proyectos</a></Li>
-            <Li><a href="#franquicias">Franquicias</a></Li>
-            <Li><a href="#contacto">Contacto</a></Li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#franquicias">Franquicias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -232,7 +230,6 @@
 
         </article>
     </section>
-
     <section id="contacto">
         <article>
             <h2>Contacto</h2>
@@ -269,8 +266,8 @@
             </div>
         </article>
     </section>
-
     <script>
+
         document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Evita el envío del formulario por defecto
 
