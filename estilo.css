@@ -30,16 +30,15 @@ h1 {
     display: none;
 }
 
-div {
+.bannertop{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div picture {
+.bannertop div picture {
     position: absolute;
     top: 0;
-    margin-top: 8.5rem;
     z-index: 0;
 }
 
@@ -82,10 +81,7 @@ section article div > div > iframe {
     border: 2px solid black;
 }
 
-.logo {
-    width: 140px;
-    margin-left: 20px;
-}
+
 
 footer {
     background-color: #1B5F2B;
@@ -245,6 +241,16 @@ button[type="submit"] {
         display: block;
     }
 
+    .logo {
+        width: 240px;
+        margin-left: 50px;
+    }
+    div picture {
+        position: absolute;
+        top: 0;
+        margin-top: 9rem;
+        z-index: -3;
+    }
 
 }
 /*Pc*/
@@ -281,7 +287,7 @@ button[type="submit"] {
     div picture {
         position: absolute;
         top: 0;
-        margin-top: 10rem;
+        margin-top: 12rem;
         z-index: -3;
     }
 
@@ -355,9 +361,5 @@ button[type="submit"] {
         width: 130px;
         margin: 0 1em;
     }
-    .logo {
-        width: 300px;
-        margin-top: 1rem;
-        z-index: 0;
-    }
+
 }
